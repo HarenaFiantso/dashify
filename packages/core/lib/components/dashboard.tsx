@@ -7,6 +7,14 @@ export type DashboardProps = AuthAppProps &
     children: ReactNode;
   };
 
+/**
+ * Main Dashboard component, entry point to the app.
+ *
+ * @Responsibilities:
+ * - Initializes the authentication system via `AuthApp`.
+ * - Provides data through the `ProviderContext`.
+ * - Renders child components with context access.
+ */
 export const Dashboard: FC<DashboardProps> = ({
   providers,
   authProvider,
